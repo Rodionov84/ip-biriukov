@@ -1,5 +1,47 @@
 .App {
-  text-align: center;
+  text-align: left;
+}
+
+li {
+  text-align: left;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.plus {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to bottom, transparent 45%, #000 45%, #000 55%, transparent 55%), linear-gradient(to right, transparent 45%, #000 45%, #000 55%, transparent 55%);
+  transition: 3s;
+}
+
+.minus {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(to bottom, transparent 45%, #000 45%, #000 55%, transparent 55%);
+}
+
+.space {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+.gitIcon {
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 .App-logo {
@@ -15,12 +57,12 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 55px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* font-size: calc(1px + 2vmin); */
   color: white;
 }
 
@@ -32,6 +74,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
